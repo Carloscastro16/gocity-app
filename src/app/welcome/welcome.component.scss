@@ -1,7 +1,11 @@
 ion-content::part(background) {
     background: #EDE8D1;
   }
+  ion-buttons{
+    background: none;
+    color: #EA5A44;
+ }
+ion-label::part(scroll){
+ color:#EA5A44 ;
+}
   
-  ion-content::part(scroll) {
-    color: #fff;
-  }
