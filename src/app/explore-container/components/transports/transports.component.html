@@ -15,7 +15,11 @@
       <swiper [slidesPerView]="1" [spaceBetween]="0">
         <ng-container *ngFor="let route of routes; index as i">
           <ng-template swiperSlide>
-            Slide {{ i }}
+            <div class="card">
+              <div class="title">
+                Slide {{ i }}
+              </div>
+            </div>
           </ng-template>
         </ng-container>
       </swiper>

@@ -29,6 +29,10 @@
 @import "./assets/presets/fonts.scss";
 @import "./assets/presets/form-styles.scss";
 
+@import "swiper/scss";
+@import "swiper/scss/navigation";
+@import "swiper/scss/pagination";
+@import "swiper/scss/effect-fade";
 /* global color */
 :root {
     --primaryOrange: #EA5A44;
