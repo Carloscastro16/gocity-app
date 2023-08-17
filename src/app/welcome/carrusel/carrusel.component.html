@@ -2,7 +2,7 @@
   <ng-container *ngFor="let slide of slides; index as i">
     <ng-template swiperSlide>
       <img [src]="slide.icon" alt="">
-      Slide {{ slide }}
+      Slide {{ i }}
     </ng-template>
   </ng-container>
 </swiper>
