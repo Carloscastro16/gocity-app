@@ -3,8 +3,18 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    .imagen{
+        width: 215px;
+        height: 215px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 70px;
+        background: #cb968182;
+    }
     img{
-        width: 210px;
+        width: 80%;
         object-fit: contain;
     }
 }
