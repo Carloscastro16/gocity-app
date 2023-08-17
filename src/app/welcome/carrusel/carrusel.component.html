@@ -1,8 +1,11 @@
 <swiper [slidesPerView]="1" [spaceBetween]="0">
   <ng-container *ngFor="let slide of slides; index as i">
     <ng-template swiperSlide>
-      <img [src]="slide.icon" alt="">
+      <div class="card">
+         <img [src]="slide.icon" alt="">
       Slide {{ i }}
+      </div>
+     
     </ng-template>
   </ng-container>
 </swiper>
