@@ -1,11 +1,24 @@
 <section>
   <div class="mapa">
-    
   </div>
   <div class="zone-pills">
-
+    <div class="pill one">Zona Centro</div>
+    <div class="pill two">Zona Hotelera</div>
+    <div class="pill three">Zona Sur</div>
   </div>
   <div class="routes">
-
+    <div class="price">
+      <h2>Precio: $12</h2>
+      <span class="line"></span>
+    </div>
+    <div class="swiper-routes">
+      <swiper [slidesPerView]="1" [spaceBetween]="0">
+        <ng-container *ngFor="let route of routes; index as i">
+          <ng-template swiperSlide>
+            Slide {{ i }}
+          </ng-template>
+        </ng-container>
+      </swiper>
+    </div>
   </div>
 </section>

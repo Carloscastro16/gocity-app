@@ -1,0 +1,49 @@
+section{
+    width: 100%;
+    .mapa{
+        display: flex;
+        width: 100%;
+        height: 300px;
+        background-image: url(../../../../assets/images/zonaHotelera.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 37px;
+        margin: 25px 0;
+    }
+    .zone-pills{
+        overflow-x: scroll;
+        width: 100%;
+        display: flex;
+        gap: 1rem;
+        .pill{
+            cursor: pointer;
+            width: fit-content;
+            padding: 10px .8rem;
+            white-space: nowrap;
+            background: #fff;
+            border-radius: 40px;
+            color: #000;
+        }
+    }
+    .routes{
+        display: flex;
+        flex-direction: column;
+        .price{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-self: center;
+            h2{
+                font-size: 1.3rem;
+            }
+            .line{
+                height: 1px;
+                background-color: var(--primaryOrange);
+            }
+        }
+        .swiper-routes{
+            width: 100%;
+        }
+    }
+}

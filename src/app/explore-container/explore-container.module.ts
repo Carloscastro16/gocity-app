@@ -8,18 +8,21 @@ import { ExploreContainerComponent } from './explore-container.component';
 import { MapaComponent } from './components/mapa/mapa.component';
 import { ProfileComponent } from './components/profile/profile.component';
 import { TransportsComponent } from './components/transports/transports.component';
+import { SwiperModule } from 'swiper/angular';
 
 @NgModule({
   imports: [ 
     CommonModule, 
     FormsModule, 
-    IonicModule
+    IonicModule,
+    SwiperModule
   ],
   declarations: [
     ExploreContainerComponent,
     MapaComponent,
     ProfileComponent,
     TransportsComponent,
+
   ],
   exports: [ExploreContainerComponent]
 })
