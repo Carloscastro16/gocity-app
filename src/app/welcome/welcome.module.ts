@@ -4,12 +4,14 @@ import { IonicModule } from '@ionic/angular';
 import { FormsModule } from '@angular/forms';
 import { WelcomeComponent } from './welcome.component';
 import { CarruselComponent } from './carrusel/carrusel.component';
+import { SwiperModule } from 'swiper/angular';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule, 
     IonicModule,
+    SwiperModule,
   ],
   declarations: [
     WelcomeComponent,
