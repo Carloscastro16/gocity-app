@@ -25,6 +25,10 @@
 @import "@ionic/angular/css/text-transformation.css";
 @import "@ionic/angular/css/flex-utils.css";
 
+@import "./assets/presets/containers.scss";
+@import "./assets/presets/fonts.scss";
+@import "./assets/presets/form-styles.scss";
+
 /* global color */
 :root{
     --primaryOrange:#EA5A44;

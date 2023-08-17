@@ -1,6 +1,16 @@
-<div id="container">
-  <strong>{{ name }}</strong>
-  <p>Explore <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components halo</a></p>
+<div class="container">
+  <div class="header">
+    <div class="icon">perfil</div>
+    <div class="title">
+      <div class="first">
+        ¿A donde
+      </div>
+      <div class="second">
+        vamos hoy?
+      </div>
+    </div>
+  </div>
+  
   <app-mapa *ngIf="name == 'mapa'"></app-mapa>
   <app-profile *ngIf="name == 'profile'"></app-profile>
   <app-transports *ngIf="name == 'transports'"></app-transports>
