@@ -1,17 +1,11 @@
-<ion-content>
-  <ion-card >
-    <ion-card-header class="separacion">
-
-      <ion-item detail="true" detail-icon="search-outline">
-        <ion-input aria-label="Custom input" placeholder="Custom input" [counter]="true"></ion-input>
-      </ion-item>
-      <div class="zone-pills">
-        <div class="pill one">Zona Centro</div>
-        <div class="pill two">Zona Hotelera</div>
-        <div class="pill three">Zona Sur</div>
-      </div>
-    </ion-card-header>
-    <ion-card-content>
-    </ion-card-content>
-  </ion-card>
-</ion-content>
+<capacitor-google-map id="map"></capacitor-google-map>
+<div class="container">
+  <ion-item detail="true" detail-icon="search-outline">
+    <ion-input aria-label="Custom input" placeholder="Custom input" [counter]="true"></ion-input>
+  </ion-item>
+  <div class="zone-pills">
+    <div class="pill">Playas</div>
+    <div class="pill">Restaurantes</div>
+    <div class="pill">Hoteles</div>
+  </div>
+</div>

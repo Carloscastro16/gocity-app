@@ -42,13 +42,11 @@
     --buttonSelect:#A7C6D9;
     --letterDark:#FFFFFF;
     --light:#F2F2F2;
-    
-
-
 }
 
 .md body {
     --ion-background-color: #EDE8D1;
+    --ion-tab-bar-background: #EDE8D1;
     --ion-background-color-rgb: 18, 18, 18;
     --ion-item-background: #EDE8D1;
     --ion-toolbar-background: #EDE8D1;
@@ -61,6 +59,7 @@
 
 @media (prefers-color-scheme: dark) {
     .md body {
+        --ion-tab-bar-background: #2c3644;
         --ion-text-color: #fff;
         --ion-text-color-rgb: 255, 255, 255;
         --ion-background-color: #323D4D;
