@@ -21,6 +21,7 @@ ion-item {
     --background: #373737;
     --border-radius: 20px;
     margin-bottom: 1rem;
+    margin-top: 2.5rem;
 }
 
 ion-col {
@@ -39,6 +40,9 @@ ion-col {
     width: 100%;
     display: flex;
     gap: 1rem;
+    position: relative;
+    z-index: 9;
+
     .pill{
         cursor: pointer;
         width: fit-content;
@@ -47,6 +51,7 @@ ion-col {
         background: #fff;
         border-radius: 40px;
         color: #000;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     }
 }
 

@@ -14,6 +14,6 @@ export class WelcomeComponent  implements OnInit {
 
   ngOnInit() {}
   goTo(){
-    this.router.navigate(['/tabs/tab1']);
+    this.router.navigate(['/tabs/tab2']);
   }
 }

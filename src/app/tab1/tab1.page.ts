@@ -9,8 +9,8 @@ import { Geolocation } from '@capacitor/geolocation';
   styleUrls: ['tab1.page.scss']
 })
 export class Tab1Page implements OnInit {
-  /* public apiKey = environment.ApikeyGoogleMaps; */
-  public apiKey = 'environment.ApikeyGoogleMaps';
+  public apiKey = environment.ApikeyGoogleMaps;
+  /* public apiKey = 'environment.ApikeyGoogleMaps'; */
   userLocation = {
     lat: 21.161908,
     lng: -86.8515279,

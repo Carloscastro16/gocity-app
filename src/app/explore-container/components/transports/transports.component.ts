@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-transports',
@@ -68,7 +69,17 @@ export class TransportsComponent  implements OnInit {
       score: "4"
     },
   ];
-
+  swiperConfig: any = {
+    allowTouchMove: true,
+    slidesPerView: 1,
+    spaceBetween: 10,
+    loop: false,
+    breakpoints: {
+      500:{
+        slidesPerView: 2,
+      }
+    }
+  }
   stars: any[] = [
     { icon: 'star-outline', color: 'medium' },
     { icon: 'star-outline', color: 'medium' },
@@ -76,9 +87,14 @@ export class TransportsComponent  implements OnInit {
     { icon: 'star-outline', color: 'medium' },
     { icon: 'star-outline', color: 'medium' },
   ];
-
-  constructor() {}
-
+  optionSelected = 'Paraderos';
+  selectedZone = 'Hotelera'
+  constructor(
+    private router: Router
+  ) {}
+  goTo(){
+    this.router.navigate(['/tabs/tab1']);
+  }
   ngOnInit() {}
 
   toggleStar(index: number) {
@@ -90,6 +106,12 @@ export class TransportsComponent  implements OnInit {
       star.icon = 'star';
       star.color = 'warning';
     }
+  }
+  selectOption(option: string){
+    this.optionSelected = option;
+  }
+  selectZone(option: string){
+    this.selectedZone = option;
   }
 }
 

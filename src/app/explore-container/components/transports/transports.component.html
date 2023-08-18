@@ -1,57 +1,65 @@
 <section>
-  <div class="mapa">
+  <div class="mapa" [class.map1]="optionSelected == 'Paraderos'" [class.map2]="optionSelected == 'Rutas'">
   </div>
   <div class="zone-pills">
-    <div class="pill one">Zona Centro</div>
-    <div class="pill two">Zona Hotelera</div>
-    <div class="pill three">Zona Sur</div>
+    <div class="pill one" (click)="selectZone('Centro')" [class.selected]="selectedZone == 'Centro'">Zona Centro</div>
+    <div class="pill two" (click)="selectZone('Hotelera')" [class.selected]="selectedZone == 'Hotelera'">Zona Hotelera</div>
+    <div class="pill three" (click)="selectZone('Norte')" [class.selected]="selectedZone == 'Norte'">Zona Norte</div>
+    <div class="pill three" (click)="selectZone('Sur')" [class.selected]="selectedZone == 'Sur'">Zona Sur</div>
   </div>
-  <div class="routes">
+  <div class="routes hotelera" *ngIf="selectedZone == 'Hotelera'">
     <div class="price">
       <h2>Precio: $12 Pesos</h2>
       <hr class="line">
       <!-- <span class="line"></span> -->
     </div>
     <div class="swiper-routes">
-      <swiper [slidesPerView]="2" [spaceBetween]="0">
+      <swiper [config]="swiperConfig">
         <ng-container *ngFor="let route of routes; index as i">
           <ng-template swiperSlide>
-            <div class="card">
+            <div class="card container">
               <div class="title">
                 {{ route.route }} 
               </div>
-              <div class="subtitle">
-                {{ route.scheduCompany }}  {{ route.scheduCompany2 }} 
-              </div>
-              
-              <ion-grid>
-                <ion-row>
-                  <ion-col size="auto" *ngFor="let star of stars; let i = index;">
-                    <ion-icon
-                      [name]="star.icon"
-                      [color]="star.color"
-                      (click)="toggleStar(i)"
-                    ></ion-icon>
-                  </ion-col>
-                </ion-row>
-              </ion-grid>  
               <div class="hours-date">
                 <p>Lunes a Domingo {{ route.scheduleStart }} a {{ route.scheduleEnd }}</p>
               </div>
+              <!-- <div class="subtitle">
+                {{ route.scheduCompany }}  {{ route.scheduCompany2 }} 
+              </div> -->
+              
 
               <div class="zone-pills-v2">
-                <div class="text-sub">Paraderos</div>
-                <div  class="text-sub-v2">Semaforos</div>
+                <div class="text-sub" (click)="selectOption('Paraderos')" [class.selected]="optionSelected == 'Paraderos'">Paraderos</div>
+                <div  class="text-sub" (click)="selectOption('Rutas')" [class.selected]="optionSelected == 'Rutas'">Rutas</div>
               </div>
-
-              <div class="text-sub-v21">Paradero 1</div>
-              <div class="text-sub-v21">Paradero 2</div>
-              <div class="text-sub-v21">Paradero 3</div>
+              <ion-grid>
+                <ion-row>
+                  <ion-icon *ngFor="let star of stars; let i = index;"
+                    [name]="star.icon"
+                    [color]="star.color"
+                    (click)="toggleStar(i)"
+                  ></ion-icon>
+                </ion-row>
+              </ion-grid>  
+              <div class="paraderos">
+                <div class="text-sub-v21" (click)="goTo()">Paradero 1</div>
+                <div class="text-sub-v21" (click)="goTo()">Paradero 2</div>
+                <div class="text-sub-v21" (click)="goTo()">Paradero 3</div>
+              </div>
 
             </div>
           </ng-template>
         </ng-container>
       </swiper>
     </div>
+  </div>
+  <div class="routes" *ngIf="selectedZone != 'Hotelera'">
+    <div class="price">
+      <h2>Precio: $10 Pesos</h2>
+      <hr class="line">
+      <!-- <span class="line"></span> -->
+    </div>
+    <h2>Proximamente</h2>
   </div>
 </section>
