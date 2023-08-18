@@ -21,7 +21,7 @@ section{
             width: fit-content;
             padding: 10px .8rem;
             white-space: nowrap;
-            background: #fff;
+            background: var(--light);
             border-radius: 40px;
             color: #000;
         }
@@ -36,9 +36,12 @@ section{
             justify-self: center;
             h2{
                 font-size: 1.3rem;
+                margin-bottom: 0;
             }
             .line{
-                height: 1px;
+                height: 2px;
+                width: 100px;
+                margin-left: 0;
                 background-color: var(--primaryOrange);
             }
         }
@@ -51,14 +54,14 @@ section{
 .card {
     border-radius: 23px;
     border: 1px solid #EA5A44;
-    background: #FFF;
+    background: var(--light);
     width: 188px;
     height: 430px;
     flex-shrink: 0;
   }
 
 .title {
-    color: #323D4D;
+    color: var(--darkBlue);
     text-align: left;
     font-feature-settings: 'clig' off, 'liga' off;
     font-family: Montserrat;
@@ -72,7 +75,7 @@ section{
 }
 
 .subtitle {
-    color: #323D4D;
+    color: var(--darkBlue);
     text-align: center;
     font-feature-settings: 'clig' off, 'liga' off;
     font-family: Montserrat;
@@ -93,7 +96,7 @@ ion-icon {
 }
 
 .hours-date{
-    color: #323D4D;
+    color: var(--darkBlue);
     text-align: center;
     font-feature-settings: 'clig' off, 'liga' off;
     font-family: Montserrat;
@@ -112,16 +115,16 @@ ion-icon {
 
 .text-sub{
         padding: 6px 5px;
-        background: #c41515;
+        background: var(--primaryOrange);
         border-radius: 100px;
         font-family: Montserrat;
         font-size: 13px;
-        color: #ffffff;
+        color: var(--letterDark);
         margin: 15px;
         margin-top: auto;
 }
 .text-sub-v2{
-    color: #000;
+    color: var(--darkBlue);
     font-family: Montserrat;
     font-size: 12px;
     margin: -4px;
@@ -129,11 +132,11 @@ ion-icon {
 }
 .text-sub-v21{
     padding: 6px 5px;
-    background: #F2F2F2;
+    background: var(--letterDark);
     border-radius: 100px;
     font-family: Montserrat;
     font-size: 13px;
-    color: #EA5A44;
+    color:var(--primaryOrange);
     margin: 15px;
     margin-top: auto;
 }
