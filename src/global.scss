@@ -71,3 +71,7 @@
         --ion-card-background: #323D4D;
     }
 }
+.swiper-pagination-bullet-active {
+    opacity: 1;
+    background: var(--primaryOrange);
+  }
