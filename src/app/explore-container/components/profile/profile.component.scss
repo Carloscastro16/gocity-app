@@ -2,10 +2,13 @@
 .textColor{
     color: var(--primaryOrange);
     font-family: Montserrat;
-   
+    font-size: 14px;
+    width: 100%;
+    display: flex;
+    padding-inline: 1rem;
+    justify-content: space-between;
 }
 .textTitle{
-color: var(--darkBlue);
 text-align: center;
 font-family: Montserrat;
 }
