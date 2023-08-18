@@ -47,3 +47,93 @@ section{
         }
     }
 }
+
+.card {
+    border-radius: 23px;
+    border: 1px solid #EA5A44;
+    background: #FFF;
+    width: 188px;
+    height: 430px;
+    flex-shrink: 0;
+  }
+
+.title {
+    color: #323D4D;
+    text-align: left;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 22px; /* 129.412% */
+    letter-spacing: -0.41px;
+
+    padding: 2rem;
+}
+
+.subtitle {
+    color: #323D4D;
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 22px; /* 157.143% */
+    letter-spacing: -0.71px;
+
+    margin-top: -2rem;
+    word-spacing: 18px;
+    
+}
+  
+ion-icon {
+    margin: -9px;
+    padding-left: 22px;
+}
+
+.hours-date{
+    color: #323D4D;
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Montserrat;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px; /* 157.143% */
+    letter-spacing: -0.41px;
+}
+
+.zone-pills-v2{
+    display: flex;
+    
+
+}
+
+.text-sub{
+        padding: 6px 5px;
+        background: #c41515;
+        border-radius: 100px;
+        font-family: Montserrat;
+        font-size: 13px;
+        color: #ffffff;
+        margin: 15px;
+        margin-top: auto;
+}
+.text-sub-v2{
+    color: #000;
+    font-family: Montserrat;
+    font-size: 12px;
+    margin: -4px;
+    margin-top: 6px;
+}
+.text-sub-v21{
+    padding: 6px 5px;
+    background: #F2F2F2;
+    border-radius: 100px;
+    font-family: Montserrat;
+    font-size: 13px;
+    color: #EA5A44;
+    margin: 15px;
+    margin-top: auto;
+}
